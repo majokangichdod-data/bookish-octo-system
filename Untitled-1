@@ -1,0 +1,19 @@
+student.sql
+
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
+
+INSERT INTO student (id, fullName, age)
+VALUES
+    (1, 'Angich', 22),
+    (2, 'Amina', 19),
+    (3, 'Brian', 21);
+
+UPDATE student
+SET age = 20
+WHERE id = 2;
+
+SELECT * FROM student;
